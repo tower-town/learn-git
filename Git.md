@@ -347,10 +347,10 @@ graph LR;
                 Type --> refactor;
                 Type --> style;
                 Type --> test;
-    Header --> (Scope)
-    Header --> Subject
-    Body
-    Footer
+    Header --> (Scope);
+    Header --> Subject;
+    Body;
+    Footer;
 ```
 
 `commit`由三部分组成：`Header`、`Body`、`Footer`
