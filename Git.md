@@ -350,7 +350,7 @@ graph TB;
              Header --> Scope;
              Header --> Subject;
     commit --> Body;
-    commit --> Footer;graph LR;
+    commit --> Footer;
 ```
 
 `commit`由三部分组成：`Header`、`Body`、`Footer`
