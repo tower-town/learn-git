@@ -9,10 +9,10 @@ git
 
 [git history](https://www.welcometothejungle.com/en/articles/btc-history-git)
 
-### 英文版
-
 <details>
-<summary>简介</summary>
+<summary>English</summary>
+
+### 英语简介
 
 #### In the beginning
 
@@ -69,10 +69,10 @@ That concern is not shared by Torvalds, though. *“I  don’t have any reservat
 
 </details>
 
-### 中文版
-
 <details>
-<summary>简介</summary>
+<summary>中文版</summary>
+
+### 中文简介
 
 #### 在一开始的时候
 
@@ -337,20 +337,20 @@ git commit -m "fix(core): remove deprecated and defunct wtf* apis" -m "These api
 ```
 
 ```mermaid
-graph LR;
-    Header --> Type --> buid;
+graph TB;
+    commit --> Header -->  Type --> buid;
                 Type --> ci;
                 Type --> docs;
                 Type --> feat;
                 Type --> fix;
                 Type --> perf;
-                Type --> refactor;
-                Type --> style;
+                Type --> refactor
+                Type --> Style
                 Type --> test;
-    Header --> (Scope);
-    Header --> Subject;
-    Body;
-    Footer;
+             Header --> Scope;
+             Header --> Subject;
+    commit --> Body;
+    commit --> Footer;graph LR;
 ```
 
 `commit`由三部分组成：`Header`、`Body`、`Footer`
@@ -377,7 +377,9 @@ graph LR;
 | `Body`[可选] | | | 介绍修改的动机与背景或者仅仅是描述更改的细节 |
 | `Footer`[可选] | | | 声明更改后的结果 |
 
-`commit`的例子
+<details>
+<summary>`commit`的例子</summary>
+
 <details>
 <summary>build</summary>
 
@@ -512,6 +514,8 @@ test(ivy): add canonical compiler spec for class/style (#22719)
 test(ivy): mark jit_summaries_integration_spec as obsolete in Ivy (#28027)
 test(ivy): split out provider tests (#27069)
 ```
+
+</details>
 
 </details>
 
@@ -2149,8 +2153,6 @@ git submodule foreach --recursive git submodule init
 git submodule foreach --recursive git submodule update
 ```
 
-<<<<<<< HEAD
-=======
 
 ## 删除文件
 
@@ -2166,7 +2168,6 @@ git rm -rf node_modules/
   
 ```
 
->>>>>>> 50907bf (git.md add option that is git-log)
 
 [Github官方教程](https://docs.github.com/en/github/writing-on-github)
 
