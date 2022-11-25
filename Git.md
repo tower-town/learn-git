@@ -731,7 +731,7 @@ git reset --hard FETCH_HEAD # FETCH_HEAD表示上一次成功git pull之后形�
 
 ### 小总结（1）
 
-![git](Git/git.png)
+![git](images/git.png)
 
 ### branch 分支
 
@@ -1396,7 +1396,7 @@ git merge origin/<branch>  # 将版本区的代码放到工作区（索引区？
 
 ### 小总结（2）
 
-![git&remote](Git/git&remote.png)
+![git&remote](images/git&remote.png)
 
 ### rebase 变为基类
 
@@ -1510,7 +1510,7 @@ git rebase origin/<branch>
 
 ### gitflow
 
-![gitflow](Git/gitflow.png)
+![gitflow](images/gitflow.png)
 
 ### tag
 
