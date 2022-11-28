@@ -14,7 +14,7 @@ usage: git fetch [<options>] [<repository> [<refspec>...]]
 | 选项 | 说明 | 示例 |
 | :---: | --- | --- |
 | --all | 获取所有的远端 |  |
-| --atomic | 原子(atomic)交易更新获取 |  |
+| --atomic | 原子 (atomic) 交易更新获取 |  |
 | -t,--tangs | 获取所有 tags 的远端 |  |
 
 git fetch 的输出状态
@@ -29,7 +29,7 @@ flag:指示引用状态的单个字符
 | :---: | --- |
 | \<space\> | 成功快速推送 |
 | + | 成功强制更新获取 |
-| - | 成功修剪(prune)引用 |
+| - | 成功修剪 (prune) 引用 |
 | t | 成功更新 tag |
 | * | 成功推送新引用 |
 | ！ | 引用被拒绝或者失败 |

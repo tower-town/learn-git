@@ -74,11 +74,11 @@ graph TB;
 | | | ci | 标记`development`的修改，包括：（`continuous integration`）持续集成和系统部署（脚本、配置、工具） |
 | | | docs | 标记`documents`的更改，包括：用户文档与开发文档 |
 | | | feat | 标记`production`的变化，包括：新的兼容性能力与新特性（`feature`） |
-| | | fix | 标记`production`的修改，包括：`bug`修复(`fix`) |
+| | | fix | 标记`production`的修改，包括：`bug`修复 (`fix`) |
 | | | perf | 标记`production`的改变，包括：性能（`performance`）的提升 |
-| | | refactor | 标记`development`的更改，包含：修改底层代码,如移除冗余代码、变量重命名的重构(`refactor`) |
+| | | refactor | 标记`development`的更改，包含：修改底层代码，如移除冗余代码、变量重命名的重构 (`refactor`) |
 | | | style | 标记`development`的变化，包括：代码的风格（`style`）） |
-| | | test | 标记`develop`的更改，包括：重构的测试(`test`)或者新增测试 |
+| | | test | 标记`develop`的更改，包括：重构的测试 (`test`) 或者新增测试 |
 | `Header` | `scope`[可选] | | 代表内容更改的前缀 |
 | | `subject` | | 概述实际的更改内容 |
 | `Body`[可选] | | | 介绍修改的动机与背景或者仅仅是描述更改的细节 |

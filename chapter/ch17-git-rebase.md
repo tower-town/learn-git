@@ -93,7 +93,7 @@ git rebase origin/<branch>
 
 * 安装 Beyond compare
 
-* 在git中配置
+* 在 git 中配置
 
   ```bash
   git config --local merge.tool bc3
@@ -101,7 +101,7 @@ git rebase origin/<branch>
   git config --local mergetool.keepBackup false
   ```
 
-* 应用beyond compare解决冲突
+* 应用 beyond compare 解决冲突
 
   ```bash
   git mergetool

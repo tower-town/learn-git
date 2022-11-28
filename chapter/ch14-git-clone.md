@@ -20,14 +20,14 @@ git clone [--template=<template_directory>]
 
 | 选项 | 说明 |
 | :---: | --- |
-| -l,--local | 从本地(local)仓库克隆 |
-| -s,--share | 从本地分享(share)仓库中克隆 |
-| -r,--reference | 从本地引用(reference)中克隆 |
+| -l,--local | 从本地 (local) 仓库克隆 |
+| -s,--share | 从本地分享 (share) 仓库中克隆 |
+| -r,--reference | 从本地引用 (reference) 中克隆 |
 | --bare | 创建一个空仓库 |
 ---
 `git clone --local`时，注意：此操作可以与对源存储库为硬链接的并发修改竞争，类似于在修改 src 时运行 cp -r src dst.
 
-`git clone --share`时，注意：此时共享仓库使用软连接，删改时可能会发生为引用或`dangling`.若要`---share`仓库，同时能够使彼此不产生依赖，建议使用`git repack -a`命令重新打包仓库.
+`git clone --share`时，注意：此时共享仓库使用软连接，删改时可能会发生为引用或`dangling`.若要`---share`仓库，同时能够使彼此不产生依赖，建议使用`git repack -a`命令重新打包仓库。
 
 `git clone --refernce`类似`git clone --share`
 
@@ -69,7 +69,7 @@ git clone git://github.com/JSLite/JSLite.js.git mypro #克隆到自定义文件�
 git clone [user@]example.com:path/to/repo.git/ #SSH协议还有另一种写法。 
 ```
 
-`git clone`支持多种协议，除了HTTP(s)以外，还支持SSH、Git、本地文件协议等，下面是一些例子。`git clone <版本库的网址> <本地目录名>`  
+`git clone`支持多种协议，除了 HTTP(s) 以外，还支持 SSH、Git、本地文件协议等，下面是一些例子。`git clone <版本库的网址> <本地目录名>`  
 
 ```bash
 git clone http[s]://example.com/path/to/repo.git/

@@ -15,7 +15,7 @@ git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run]
     [--no-verify] [<repository> [<refspec>…]]
 ```
 
-> ps: \<repository\>:远程仓库的目的地 ； \<refspec\>:repositoty
+> ps: \<repository\>:远程仓库的目的地； \<refspec\>:repositoty
 specify 指定的仓库
 >
 
@@ -23,10 +23,10 @@ specify 指定的仓库
 | :---: | --- | --- |
 | --all | 推送所有分支到远端仓库 | git push --all origin master |
 | --prune | 删除没有本地副本的远程分支 |  |
-| -d | 所有列出的引用都从远程存储库中删除(delete) |  |
+| -d | 所有列出的引用都从远程存储库中删除 (delete) |  |
 | --tag | 除了明确列出的仓库之外，refs/tags 下的所有 refs 都会被推送 |  |
-| -f | 强制(force)推送更新并覆盖原有的仓库，非必要不建议使用 | git push --force origin master  <font color=green># 强制推送master，建议使用 git push origin +master <font> |
-| -u | 设置默认上传(set-upstream)分支 | git push -u origin master <font color=green># 设置默认上传(tracked)分支为master <font> |
+| -f | 强制 (force) 推送更新并覆盖原有的仓库，非必要不建议使用 | git push --force origin master  <font color=green># 强制推送 master，建议使用 git push origin +master <font> |
+| -u | 设置默认上传 (set-upstream) 分支 | git push -u origin master <font color=green># 设置默认上传 (tracked) 分支为 master <font> |
 
 远端的配置地址的格式：
 
@@ -61,7 +61,7 @@ specify 指定的仓库
 git push origin <branch>  
 ```
 
-git pull的输出状态
+git pull 的输出状态
 
 ```bash
 <flag> <summary> <from> -> <to> (<reason>)

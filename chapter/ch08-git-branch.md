@@ -14,10 +14,10 @@ usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
 
 | 选项 | 说明 | 示例 |
 | :---: | --- | ---- |
-| -a,--all | 显示所有(all)分支(默认) | git branch -all<font color=green># 默认(即 git branch) 只显示本地分支(绿色) </font> |
-| -l \<pattern\> | 列出(list)指定的分支(默认为本地分支) |  git branch --list  m* <font color=green> # 列出 m 开头的分支 </font> |
+| -a,--all | 显示所有 (all) 分支 (默认) | git branch -all<font color=green># 默认 (即 git branch) 只显示本地分支 (绿色) </font> |
+| -l \<pattern\> | 列出 (list) 指定的分支 (默认为本地分支) |  git branch --list  m* <font color=green> # 列出 m 开头的分支 </font> |
 | \<branch\> | 在主干上新建分支 |  \<matser\> git branch  todo <font color=green> # 在 master 上创建 todo 分支 </font> |
-| -r | 列出远程(remotes)分支（红色） | git branch -r -l o* <font color=green> # 列出远程以 o 开头的分支 </font> |
+| -r | 列出远程 (remotes) 分支（红色） | git branch -r -l o* <font color=green> # 列出远程以 o 开头的分支 </font> |
 | -d/-D | 删除/强制删除(delete)分支 | git branch -d todo <font color=green> # 删除 todo 分支 |
 | -m/-M | 移动/强制移动(move)分支 | git branch -m dev feature <font color=green> # 将 dev 命名为 feature 分支 |
 | -c/-C | 复制/强制拷贝(copy)分支 | git branch -c dev release <font color=green> # 拷贝 dev 为 release 分支 |

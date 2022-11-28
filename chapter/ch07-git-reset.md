@@ -1,8 +1,8 @@
 # reset 回滚/重置
 
-> 重置HEAD到指定状态
+> 重置 HEAD 到指定状态
 >
->PS: HEAD 是对存储库中某个头的引用，除非使用分离的 HEAD，在这种情况下，它直接引用任意提交. --> [git名词库](https://git-scm.com/docs/gitglossary)
+>PS: HEAD 是对存储库中某个头的引用，除非使用分离的 HEAD，在这种情况下，它直接引用任意提交。--> [git 名词库](https://git-scm.com/docs/gitglossary)
 >
 
 ```bash
@@ -20,7 +20,7 @@ git reset [<mode>] [<commit>]
 
 | 模式选项 | 说明 | 示例 |
 | :------: | ----- | ------ |
-| --soft \<hash\> | 保留工作区的修改和索引,但撤回提交 | git reset --soft b8d8ad2 <font color=green># \<hash\>可在git log 或者 git reflog</font>|
+| --soft \<hash\> | 保留工作区的修改和索引，但撤回提交 | git reset --soft b8d8ad2 <font color=green># \<hash\>可在 git log 或者 git reflog</font>|
 | --mixed \<hash\>| 重置索引但不改变工作区，即保留修改的文件，但不标记提交（默认） | git reset HEAD 或者 git reset --mixed HEAD <font color=green> # 重置提交 </font>|
 | --hard \<hash\> | 重置索引和工作树，即将自提交以来的所有更改都丢弃 | git reset --hard HEAD~3 <font color=green> # 回滚至最近第三个提交之前 </font> |
 | -- \<file\> | 撤销文件更改 | git reset -- frotz.c |
@@ -29,13 +29,13 @@ git reset [<mode>] [<commit>]
 
 最近的三个提交为 HEAD,HEAD^,HEAD~2
 
-通过存储暂存区stash，在删除暂存区的方法放弃本地修改。
+通过存储暂存区 stash，在删除暂存区的方法放弃本地修改。
 
 ```shell
 git stash && git stash drop 
 ```
 
-> **索引(Index)**是您建议的下一次提交,这个概念称为 Git 的**“暂存区”(stage area)**
+> **索引 (Index)**是您建议的下一次提交，这个概念称为 Git 的**“暂存区”(stage area)**
 >
 > <https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified>
 
@@ -75,7 +75,7 @@ git commit -a -c ORIG_HEAD  # (3)
 
 * 撤销一个提交，使其成为一个主题分支
 
->你已经做了一些提交，但意识到它们在 "master "分支中还不成熟。 你想在一个主题分支中继续完善它们，所以在当前的`HEAD`之外创建了`topic/wip`分支
+>你已经做了一些提交，但意识到它们在 "master "分支中还不成熟。你想在一个主题分支中继续完善它们，所以在当前的`HEAD`之外创建了`topic/wip`分支
 >
 
 ```bash
@@ -100,7 +100,7 @@ git reset --merge ORIG_HEAD
 
 * 打断工作流
 
-> 假设您在进行大的更改时，被紧急修复bug的请求打断了。您的工作树中的文件还没有提交任何状态，但是您需要转到另一个分支以快速修复bug
+> 假设您在进行大的更改时，被紧急修复 bug 的请求打断了。您的工作树中的文件还没有提交任何状态，但是您需要转到另一个分支以快速修复 bug
 >
 
 ```bash

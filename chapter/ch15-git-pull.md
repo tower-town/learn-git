@@ -27,8 +27,8 @@ usage: git pull [<options>] [<repository> [<refspec>...]]
 | 选项 | 说明 | 示例 |
 | :---: | --- | --- |
 | --commit | 执行合并与提交 |  |
-| --all | 获取所有远端 | git pull --all <font color=green># 获取远程所有内容包括tag </font> |
-| -p,--prune | 在获取之前，修剪(prune)远程上不再存在的任何远程跟踪引用 |  |
+| --all | 获取所有远端 | git pull --all <font color=green># 获取远程所有内容包括 tag </font> |
+| -p,--prune | 在获取之前，修剪 (prune) 远程上不再存在的任何远程跟踪引用 |  |
 | -t,--tags | 获取 tags 远端 |  |
 
 * 更新您从中克隆的存储库的远程跟踪分支，然后将其中一个合并到您的当前分支中：
@@ -52,7 +52,7 @@ git merge origin/next
 git pull origin <branch> # 从远端拉取代码到工作区
 ```
 
-只能拉取 `origin` 里的一个url地址，这个fetch-url  
+只能拉取 `origin`里的一个 url 地址，这个 fetch-urll  
 默认为你添加的到 `origin`的第一个地址  
 
 ```shell
@@ -61,7 +61,7 @@ git pull origin master
 git pull origin next:master # 取回origin主机的next分支，与本地的master分支合并  
 ```
 
-如果远程主机删除了某个分支，默认情况下，git pull 不会在拉取远程分支的时候，删除对应的本地分支。这是为了防止，由于其他人操作了远程主机，导致git pull不知不觉删除了本地分支。  
+如果远程主机删除了某个分支，默认情况下，git pull 不会在拉取远程分支的时候，删除对应的本地分支。这是为了防止，由于其他人操作了远程主机，导致 git pull 不知不觉删除了本地分支。  
 但是，你可以改变这个行为，加上参数 -p 就会在本地删除远程已经删除的分支。  
 
 ```shell

@@ -14,7 +14,7 @@ git merge (--continue | --abort | --quit)
 
 | 选项 | 说明 | 示例 |
 | --- | --- | --- |
-| --abort | 中止当前的冲突解决过程，并尝试重建合并前的状态。 | (master)git merge dev ;git merge --abort <font color=green># 终止合并dev分支</font>|
+| --abort | 中止当前的冲突解决过程，并尝试重建合并前的状态。 | (master)git merge dev ;git merge --abort <font color=green># 终止合并 dev 分支</font>|
 | --continue | 继续当前的合并进程 | resolve conflict;git merge --continue <font color=green># 继续合并</font> |
 | --squash(挤压) | 创建单个提交信息而非合并 |  |
 | --commit | 若合并成功将执行一个提交（默认） |  |
@@ -25,13 +25,13 @@ git merge (--continue | --abort | --quit)
 git merge fixes enhancements
 ```
 
-* 合并分支到当前分支中，使用`ours`的**合并策略(strategies)**
+* 合并分支到当前分支中，使用`ours`的**合并策略 (strategies)**
 
 ```bash
 git merge -s ours <branch>
 ```
 
-> merge的策略(strategies)
+> merge 的策略 (strategies)
 >
 > **ort** :This is the default merge strategy when pulling or merging one branch. This strategy can only resolve two heads using a 3-way merge algorithm
 >

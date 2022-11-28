@@ -43,7 +43,7 @@ rm -f hello.c
 git checkout hello.c            #(3)
 ```
 
-* 在错误的分支中工作后，将使用以下方法切换到正确的分支:
+* 在错误的分支中工作后，将使用以下方法切换到正确的分支：
 
 ```bash
 # However, your "wrong" branch and correct mytopic branch may differ in files that you have modified locally, in which case the above checkout would fail like this:

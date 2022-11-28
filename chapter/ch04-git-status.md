@@ -9,7 +9,7 @@ git status [<options>…​] [--] [<pathspec>…​]
 
 | 选项 | 说明 |
 | :--: | --- |
-|  -b | 显示<branch>的跟踪(tracking)信息 |
+|  -b | 显示<branch>的跟踪 (tracking) 信息 |
 | -s | 显示简短状态信息 |
 | --long | 显示详细状态信息（默认） |
 
@@ -43,13 +43,13 @@ git status #获取状态  #解决git status不能显示中文 -> 问题
 
 * git 的区域划分
 
-  > <font color=blue>工作区（work directory）</font>：跟踪tracked、<font color=red>新增</font>    <font color=green># 跟踪(tracked) -(自动)-> 新增</font>
+> <font color=blue>工作区（work directory）</font>：跟踪 tracked、<font color=red>新增</font>    <font color=green># 跟踪 (tracked) -(自动)-> 新增</font>t>
   >
-  > <font color=blue>暂存区(stage area)</font>：     <font color=green># <font color=blue>工作区</font>:<font color=red>新增</font> --(add )–> <font color=green>暂存区</font></font>
+> <font color=blue>暂存区 (stage area)</font>：     <font color=green># <font color=blue>工作区</font>:<font color=red>新增</font> --(add )–> <font color=green>暂存区</font></font>t>
   >
-  ><font color=blue>版本区(repository)</font>：     <font color=green># <font color=green>暂存区</font> --(commit )–> <font color=green>版本区</font></font>
+><font color=blue>版本区 (repository)</font>：     <font color=green># <font color=green>暂存区</font> --(commit )–> <font color=green>版本区</font></font>t>
 
-## 解决git status不能显示中文
+## 解决 git status 不能显示中文
 
 现象：:`git status`查看有改动但未提交的文件时总只显示数字串，显示不出中文文件名，非常不方便。如下图：
 
@@ -57,7 +57,7 @@ git status #获取状态  #解决git status不能显示中文 -> 问题
 
 解决办法：
 
-将git配置文件 `core.quotepath`项设置为`false`。`quotepath`表示引用路径，加上`--global`表示全局配置
+将 git 配置文件 `core.quotepath`项设置为`false`。`quotepath`表示引用路径，加上`--global`表示全局配置
 
 `git bash`终端输入命令：
 

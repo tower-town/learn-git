@@ -5,15 +5,15 @@
 >
 >​                       | 分支：dev(开发版) —> V1.1 —> V1.2 …|合并到（master）V2
 >
->即一般工作环境会出现至少两个分支：master、development，master即主分支存在正式版/稳定版，development(dev)存放开发版本，开发版成熟则合并至master中，然后在分支dev依次发展
+>即一般工作环境会出现至少两个分支：master、development，master 即主分支存在正式版/稳定版，development(dev) 存放开发版本，开发版成熟则合并至 master 中，然后在分支 dev 依次发展
 
 # 线上连接
 
 > github/gitee（网站提供仓库）/gitlab(工具提供生成私有仓库)
 >
-> ps:[github的高级搜索](https://www.cnblogs.com/catluo/p/11728554.html)，[github官方api帮助文档](https://docs.github.com/cn/rest):[知乎解析GitHub的api](https://zhuanlan.zhihu.com/p/152164873)
+> ps:[github 的高级搜索](https://www.cnblogs.com/catluo/p/11728554.html)，[github 官方 api 帮助文档](https://docs.github.com/cn/rest):[知乎解析 GitHub 的 api](https://zhuanlan.zhihu.com/p/152164873)
 >
-> pss:[powershell core自动更新](https://blog.lingyf.com/powershell-script-automatically-update-powershell-core/)
+> pss:[powershell core 自动更新](https://blog.lingyf.com/powershell-script-automatically-update-powershell-core/)
 
 * 注册账号
 
