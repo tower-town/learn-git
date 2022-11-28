@@ -1,0 +1,12 @@
+name: AutoCorrect Actions
+run-name: ${{ github.actor }} run AutoCorrect
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check source code
+        uses: actions/checkout@main
+
+      - name: AutoCorrect
+        uses: huacnlee/autocorrect-action@main
