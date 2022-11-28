@@ -10,6 +10,3 @@ jobs:
 
       - name: AutoCorrect
         uses: huacnlee/autocorrect-action@main
-
-      - run: curl -sSL https://git.io/JcGER | bash
-      - run: autocorrect -V
