@@ -39,6 +39,8 @@
 
 - [Ch18: `git-tag`](./chapter/ch18-git-tag.md)
 - [Ch19: `Github`](./chapter/ch19-GitHub.md)
+- [Ch20: `git-config`](./chapter/ch20-git-config.md)
+- [Ch21: `git-submodule`](./chapter/ch21-git-submodule.md)
 
 # 引用
 
