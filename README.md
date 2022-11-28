@@ -1,13 +1,13 @@
 # [learn git](https://github.com/tower-town/learn-git)
 
-这是一个`git`的学习过程手册。一般的教程思路——讲解各个命令的作用。而随着现在涌现出一些新的`git`管理概念的出现，往往`git`未及时跟进,致使之后的学习者需要自己慢慢摸索。而这个`lear-git`将逐步跟进`git`的管理概念与`GitHub`的应用，介绍`git`及其涉及到的领域
+这是一个`git`的学习过程手册。一般的教程思路——讲解各个命令的作用。而随着现在涌现出一些新的`git`管理概念的出现，往往`git`未及时跟进，致使之后的学习者需要自己慢慢摸索。而这个`learn-git`将逐步跟进`git`的管理概念与`GitHub`的应用，介绍`git`及其涉及到的领域
 
 ## 目录
 
 - [导言](./chapter/ch00-intr.md)
 - [Ch01: `git`的命令与流程](./chapter/ch01-gitflow.md)
 - [Ch02: `git-init`](./chapter/ch02-git-init.md)
-- [Ch03: `git-add`和gitigore文件](./chapter/ch03-git-add.md)
+- [Ch03: `git-add`和 gitigore 文件](./chapter/ch03-git-add.md)
 - [Ch04: `git-status`](./chapter/ch04-git-status.md)
 - [Ch05: `git-commit`与`semantic commit`](./chapter/ch05-git-commit.md)
 - [Ch06: `git-log`](./chapter/ch06-git-log.md)
@@ -45,27 +45,27 @@
 # 引用
 
 * [linux-command/git](https://github.com/jaywcjlove/linux-command/blob/master/command/git.md) 
-* [Git官网](http://git-scm.com/)
+* [Git 官网](http://git-scm.com/)
 * [git 显示中文和解决中文乱码](https://zhuanlan.zhihu.com/p/133706032)
 * [git help book](https://git-scm.com/book/zh/v2)
-* [**Github 15分钟学习Git**](https://try.github.io)
-* [Git参考手册](http://gitref.org/zh/index.html)
-* [Git简明手册](http://www.mceiba.com/tool/git-cheat-sheet.html)
+* [**Github 15 分钟学习 Git**](https://try.github.io)
+* [Git 参考手册](http://gitref.org/zh/index.html)
+* [Git 简明手册](http://www.mceiba.com/tool/git-cheat-sheet.html)
 * [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/)
 * [Git Community Book 中文版](http://gitbook.liuhui998.com/index.html)
 * [Pro Git](http://git-scm.com/book/en/v2)
-* [图解Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
+* [图解 Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
 * [git-简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
 * [learnGitBranching 在线学习工具](http://pcottle.github.io/learnGitBranching/)
 * [初级教程](http://rogerdudler.github.io/git-guide/index.zh.html)
-* [廖雪峰的Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
-* [蒋鑫老师将带你入github的大门](http://www.worldhello.net/gotgithub/)
-* [git详解](http://www.open-open.com/lib/view/open1328069609436.html)
-* [oschina教程](http://git.oschina.net/progit/)
-* [How to undo (almost) anything with Git撤销一切，汇总各种回滚撤销的场景，加强学习。](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
-* [Git 教程 | 菜鸟教程runoob.com](http://www.runoob.com/git/git-tutorial.html)
+* [廖雪峰的 Git 教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+* [蒋鑫老师将带你入 github 的大门](http://www.worldhello.net/gotgithub/)
+* [git 详解](http://www.open-open.com/lib/view/open1328069609436.html)
+* [oschina 教程](http://git.oschina.net/progit/)
+* [How to undo (almost) anything with Git 撤销一切，汇总各种回滚撤销的场景，加强学习。](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
+* [Git 教程 | 菜鸟教程 runoob.com](http://www.runoob.com/git/git-tutorial.html)
 * [Git 本地仓库和裸仓库](https://gold.xitu.io/post/5842f9b861ff4b005889ade6)
 * [沉浸式学 Git](http://www.kancloud.cn/kancloud/igit/46710)
-* [Git进阶用法，主要是rebase高级用法](http://way.oschina.io/2016/12/15/notes/GitAdvance/?utm_source=gank.io&utm_medium=email)
+* [Git 进阶用法，主要是 rebase 高级用法](http://way.oschina.io/2016/12/15/notes/GitAdvance/?utm_source=gank.io&utm_medium=email)
 
-<!-- Linux命令行搜索引擎：https://jaywcjlove.github.io/linux-command/ -->
+<!-- Linux 命令行搜索引擎：https://jaywcjlove.github.io/linux-command/ -->

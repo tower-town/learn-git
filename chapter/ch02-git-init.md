@@ -10,7 +10,7 @@ git init <options>
 | 选项 | 说明
 |:--:|------|
 | --bare | 创建一个空的仓库 |
-| -b <branch>| 覆盖原有分支并初始化,<branch>默认为master |
+| -b <branch>| 覆盖原有分支并初始化，<branch>默认为 master |
 
 ```bash
 # git init -h

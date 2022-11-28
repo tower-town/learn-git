@@ -1,9 +1,9 @@
 
 ## **问题**
 
-###### 解决git bash 终端显示中文乱码
+###### 解决 git bash 终端显示中文乱码
 
-要注意的是，这样设置后，你的`git bash`终端也要设置成中文和`utf-8`编码。才能正确显示中文.
+要注意的是，这样设置后，你的`git bash`终端也要设置成中文和`utf-8`编码，才能正确显示中文。
 
 在`git bash`的界面中右击空白处，弹出菜单，选择`选项->文本->本地Locale`，设置为`zh_CN`，而字符集选框选为`UTF-8`。
 
@@ -12,11 +12,11 @@
 
 ###### 通过修改配置文件来解决中文乱码
 
-如果你的git bash终端没有菜单选项显示，还可以通过直接修改配置文件的方式来解决中文乱码问题。
+如果你的 git bash 终端没有菜单选项显示，还可以通过直接修改配置文件的方式来解决中文乱码问题。
 
-进入git的安装目录
+进入 git 的安装目录
 
-编辑`etc\gitconfig`文件，也有些windows系统是存放在`%homepath%\.gitconfig`路径或`安装盘符:ProgramFiles\Git\mingw64\etc\gitconfig`，在文件末尾增加以下内容：
+编辑`etc\gitconfig`文件，也有些 windows 系统是存放在`%homepath%\.gitconfig`路径或`安装盘符:ProgramFiles\Git\mingw64\etc\gitconfig`，在文件末尾增加以下内容：
 
 ```text
 [gui]  
@@ -33,10 +33,10 @@
     # status引用路径不再是八进制（反过来说就是允许显示中文了）
 ```
 
-编辑`etc\git-completion.bash`文件,在文件末尾增加以下内容：
+编辑`etc\git-completion.bash`文件，在文件末尾增加以下内容：
 
 ```text
-# 让ls命令能够正常显示中文
+# 让 ls 命令能够正常显示中文
 alias ls='ls --show-control-chars --color=auto' 
 ```
 
@@ -45,7 +45,7 @@ alias ls='ls --show-control-chars --color=auto'
 属性值：
 
 ```text
-set output-meta on  # bash可以正常输入中文  
+set output-meta on  # bash 可以正常输入中文  
 set convert-meta off  
 ```
 
@@ -59,11 +59,11 @@ export LESSHARESET=utf-8
 
 **1. `git fatal: protocol error: bad line length character: No s`**
 
-解决办法：更换remote地址为 `http/https` 的  
+解决办法：更换 remote 地址为 `http/https` 的  
 
 **2. `The requested URL returned error: 403 Forbidden while accessing`**
 
-解决github push错误的办法：
+解决 github push 错误的办法：
 
 ```shell
 #vim 编辑器打开 当前项目中的config文件
@@ -127,15 +127,15 @@ git config --system user.email "you@exmaple.com"
 
 ### 配置自动换行
 
-自动转换坑太大，提交到git是自动将换行符转换为lf
+自动转换坑太大，提交到 git 是自动将换行符转换为 lf
 
 ```shell
 git config --global core.autocrlf input
 ```
 
-### 配置SSH
+### 配置 SSH
 
-#### 创建SSH密钥
+#### 创建 SSH 密钥
 
 这个密钥用来跟 github 通信，在本地终端里生成然后上传到 github
 
@@ -145,7 +145,7 @@ ssh-keygen -t rsa -C "wowohoo@qq.com" -f ~/.ssh/ww_rsa # 指定生成目录文�
 ssh -T git@github.com # 测试是否成功  
 ```
 
-#### 多账号ssh配置
+#### 多账号 ssh 配置
 
 **1.生成指定名字的密钥**
 
@@ -157,9 +157,9 @@ ssh -T git@github.com # 测试是否成功
 `vim ~/.ssh/jslite_rsa.pub`
 打开公钥文件 `jslite_rsa.pub` ，并把内容复制至代码托管平台上
 
-**3.修改config文件**
+**3.修改 config 文件**
 
-`vim ~/.ssh/config` #修改config文件，如果没有创建 `config`  
+`vim ~/.ssh/config`#修改 config 文件，如果没有创建建 `config`  
 
 ```shell
 Host jslite.github.com
@@ -201,7 +201,7 @@ git clone git@work.github.com:<work的用户名>/learngit.git
 
 **6.注意**
 
-如果你修改了id_rsa的名字，你需要将ssh key添加到SSH agent中，如：
+如果你修改了 id_rsa 的名字，你需要将 ssh key 添加到 SSH agent 中，如：
 
 ```shell
 ssh-add ~/.ssh/jslite_rsa
@@ -212,7 +212,7 @@ ssh-add -d  ~/.ssh/jslite_rsa # 删除指定的key
 
 ### 免密码登录
 
-* https协议下提交代码免密码
+* https 协议下提交代码免密码
 
 ```shell
 git clone https://github.com/username/rep.git
@@ -237,7 +237,7 @@ git clone https://github.com/username/rep.git
  merge = refs/heads/master
 ```
 
-* SSH免密登录
+* SSH 免密登录
 
 ```bash
 # 1.生成公钥和私钥(默认在 ~/.ssh/)
@@ -253,7 +253,7 @@ git remote add origin <SSH_url>
 git push origin <branch>
 ```
 
-* git自动管理凭证
+* git 自动管理凭证
 
 * 登录远程服务器
 
@@ -272,9 +272,9 @@ Host aliyun1
   IdentityFile ~/.ssh/aliyunserver.key
 ```
 
-上面配置完了，可以通过命令登录，不需要输入IP地址和密码 `ssh aliyun1`
+上面配置完了，可以通过命令登录，不需要输入 IP 地址和密码 `ssh aliyun1`
 
-### 合并多个commit
+### 合并多个 commit
 
 ```shell
 # 这个命令，将最近4个commit合并为1个，HEAD代表当前版本。
@@ -296,7 +296,7 @@ git rebase -i HEAD~4
 git push -f origin master
 ```
 
-### 修改远程Commit记录
+### 修改远程 Commit 记录
 
 ```shell
 git commit --amend
@@ -340,13 +340,13 @@ git rebase --continue
 git push -f origin master
 ```
 
-### 同步fork的上游仓库
+### 同步 fork 的上游仓库
 
-[Github教程同步fork教程](https://help.github.com/articles/syncing-a-fork/)，[在Github上同步一个分支(fork)](http://www.miss77.net/549.html)  
+[Github 教程同步 fork 教程](https://help.github.com/articles/syncing-a-fork/)，[在 Github 上同步一个分支 (fork)](http://www.miss77.net/549.html)  
 
 **设置添加多个远程仓库地址。**
 
-在同步之前，需要创建一个远程点指向上游仓库(repo).如果你已经派生了一个原始仓库，可以按照如下方法做。
+在同步之前，需要创建一个远程点指向上游仓库 (repo).如果你已经派生了一个原始仓库，可以按照如下方法做。
 
 **同步更新仓库内容**
 
@@ -363,7 +363,7 @@ git checkout master
 # Switched to branch 'master'
 ```
 
-合并来自 `upstream/master` 的更改到本地 master  分支上。  这使你的前 fork's `master` 分支与上游资源库同步，而不会丢失你本地修改。  
+合并来自 `upstream/master`的更改到本地 master  分支上。这使你的前 fork'ss `master` 分支与上游资源库同步，而不会丢失你本地修改。  
 
 ```shell
 git merge upstream/master
@@ -378,9 +378,9 @@ git merge upstream/master
 
 **2.命令行中运行代码**
 
-OLD_EMAIL原来的邮箱  
-CORRECT_NAME更正的名字  
-CORRECT_EMAIL更正的邮箱  
+OLD_EMAIL 原来的邮箱  
+CORRECT_NAME 更正的名字  
+CORRECT_EMAIL 更正的邮箱  
 
 将下面代码复制放到命令行中执行
 
@@ -412,19 +412,19 @@ Ref 'refs/heads/master' was rewritten
 
 **3.同步到远程仓库**
 
-同步到push远程git仓库
+同步到 push 远程 git 仓库
 
 ```shell
 git push --force --tags origin 'refs/heads/*'
 ```
 
-我还遇到了如下面错误，lab默认给master分支加了保护，不允许强制覆盖。`Project(项目)`->`Setting`->`Repository` 菜单下面的`Protected branches`把master的保护去掉就可以了。修改完之后，建议把master的保护再加回来，毕竟强推不是件好事。
+我还遇到了如下面错误，lab 默认给 master 分支加了保护，不允许强制覆盖。`Project(项目)`->`Setting`->`Repository` 菜单下面的`Protected branches`把 master 的保护去掉就可以了。修改完之后，建议把 master 的保护再加回来，毕竟强推不是件好事。
 
 ```shell
 remote: GitLab: You are not allowed to force push code to a protected branch on this project.
 ```
 
-当上面的push 不上去的时候，先 `git pull` 确保最新代码
+当上面的 push 不上去的时候，先 `git pull` 确保最新代码
 
 ```shell
 git pull  --allow-unrelated-histories
@@ -442,7 +442,7 @@ git blame 文件名     # 显示文件的每一行是在那个版本最后修改
 git whatchanged 文件名  # 显示某个文件的每个版本提交信息：提交日期，提交人员，版本号，提交备注（没有修改细节）  
 ```
 
-### 打造自己的git命令
+### 打造自己的 git 命令
 
 ```shell
 git config --global alias.st status
@@ -451,7 +451,7 @@ git config --global alias.co checkout
 git config --global alias.ci commit
 ```
 
-配置好后再输入git命令的时候就不用再输入一大段了，例如我们要查看状态，只需：
+配置好后再输入 git 命令的时候就不用再输入一大段了，例如我们要查看状态，只需：
 
 ```shell
 git st
@@ -544,7 +544,7 @@ git checkout -b [--track] test origin/dev # 基于远端dev分支，新建本地
 
 ## submodule
 
-克隆项目同时克隆submodule
+克隆项目同时克隆 submodule
 
 ```shell
 git clone https://github.com/jaywcjlove/handbook.git --depth=1 --recurse-submodules
@@ -561,7 +561,7 @@ git submodule update # 更新submodule(必须在根目录执行命令)
 git submodule update --init --recursive  # 下载的工程带有submodule
 ```
 
-当使用`git clone`下来的工程中带有submodule时，初始的时候，submodule的内容并不会自动下载下来的，此时，只需执行如下命令：
+当使用`git clone`下来的工程中带有 submodule 时，初始的时候，submodule 的内容并不会自动下载下来的，此时，只需执行如下命令：
 
 ```shell
 git submodule foreach git pull  # submodule 里有其他的 submodule 一次更新
@@ -578,7 +578,7 @@ git submodule foreach --recursive git submodule update
 git rm -rf node_modules/
 ```
 
-## 日志log
+## 日志 log
 
 ## 重写历史
 
