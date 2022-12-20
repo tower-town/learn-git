@@ -72,3 +72,24 @@ git shortlog -e # 在总结信息中显示提交者的 email
 
 git shortlog -c # git shortlog --group=commiter
 ```
+
+# smartlog
+<font color=orange>require: [git-branchless](https://github.com/arxanas/git-branchless) and installed `rust`</font>
+
+> 图形化显示表现你的提交 (`commit`)，不像`git log --graph`将所有的提交 (`commit`) 显示，而关注于你的`commit`.
+>
+
+```bash
+$ git sl
+⋮
+◆ 86bdeac0 48d (master) Revert "Update foo"
+┃
+✕ 8d4738cd 2d (manually hidden) new message
+┣━┓
+┃ ◯ 814b2b05 2d temp: another commit
+┃
+◯ 67687b48 2d temp: update foo
+```
+* 公开的`commit`将标记为`◇`
+* 草稿的`commit`标记为`◯`
+* 隐藏的`commit`标记为`x`
