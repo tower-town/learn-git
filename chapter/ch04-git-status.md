@@ -49,6 +49,9 @@ git status #获取状态  #解决git status不能显示中文 -> 问题
   >
 ><font color=blue>版本区 (repository)</font>：     <font color=green># <font color=green>暂存区</font> --(commit )–> <font color=green>版本区</font></font>t>
 
+## 建议
+虽然可以通过`git-status`查看状态，但更建议配合`terminal`、`shell`、`IDE`或者编辑器使用，这样更直观从 `terminal`查看状态，`terminal`可以使用`zsh`+`ohmyzsh`或者[starship](https://github.com/starship/starship)。如果你在Windows平台也可以使用`oh-my-posh`，不过如果你不在意`terminal`的启动时间，`oh-my-posh`是很棒的。而想快速启动`terminal`可以使用`starship`。
+
 ## 解决 git status 不能显示中文
 
 现象：:`git status`查看有改动但未提交的文件时总只显示数字串，显示不出中文文件名，非常不方便。如下图：
