@@ -40,3 +40,5 @@ git add -u <path>   # 更新<指定路径下>tracked的文件
 
 git check-ignore temp
 ```
+一些插件
+vs code 的 [gitigore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)
