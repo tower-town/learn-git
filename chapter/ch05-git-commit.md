@@ -32,7 +32,7 @@ git commit -m '概要描述'$'\n\n''1.详细描述'$'\n''2.详细描述' #提交
 ```
 ## Semantic Commit
 
-`commit`时，使用`语义提交`,即[Understanding Semantic Commit Messages Using ...](https://nitayneeman.com/posts/understanding-semantic-commit-messages-using-git-and-angular)
+`commit`时，使用[`语义提交`](https://nitayneeman.com/posts/understanding-semantic-commit-messages-using-git-and-angular),还有一些补充：https://www.conventionalcommits.org/en/v1.0.0/
 
 ```sh
 #`commit`的格式：
