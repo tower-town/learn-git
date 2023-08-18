@@ -49,6 +49,20 @@ git config format.pretty oneline  #显示历史记录时，每个提交的信息
 git config color.ui true #彩色的 git 输出
 git config --global format.pretty '%h : %s - %ad' --date=short #日期YYYY-MM-DD显示 写入全局配置 
 ```
+
+一个非常好看的 `git log`配置
+
+来源于： https://coolshell.cn/articles/7755.html
+
+![gitlog](https://coolshell.cn/wp-content/uploads/2012/06/git.log_.02.png)
+
+```bash
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+# set git alias
+# git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+# usage: git lg
+```
 # shortlog
 <font color=orange>v2.39.0+</font>
 > 总结`git-log`命令的内容，适当总结`release`的声明。每一个提交将以作者和标题分组。
