@@ -23,3 +23,21 @@ git config [<file-option>] -e | --edit
 
 | 选项 | 说明 | 示例 |
 | --- | --- | --- |
+
+一个非常好用的 `git alias`
+来源：https://zhuanlan.zhihu.com/p/140767014
+
+```
+[alias]
+        aliases = config --get-regexp alias
+        last = log -1 HEAD
+        amend = commit --amend --reuse-message=HEAD
+        update = fetch --all --prune
+        purge = !bash -c \"git branch -r | awk '{print \\$1}' | grep -E -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print \\$1}' | xargs -r git branch -D\"
+        graph = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
+        uncommit = reset --soft HEAD~1
+        unstage = reset HEAD --
+        stat = diff --stat
+[help]
+        autocorrect = 1
+```
